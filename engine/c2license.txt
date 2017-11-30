@@ -1,0 +1,9 @@
+License type: EDUCATION
+Product: Construct 2
+Licensed to: CART
+Email: bgaroupa@gmail.com
+Comment: Strictly for use at CART (United States)
+Timestamp: 1414689690
+Hash: 73EA34BC6CDA8666C7D8B11C9E0197158DD5C568407393E6
+
+This is an educational license valid for use on any number of computers at the named educational institute.  This license is valid for as long as the named institute is subscribed to Scirra's educational program.
