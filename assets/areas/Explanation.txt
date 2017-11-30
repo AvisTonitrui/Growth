@@ -1,3 +1,4 @@
 Blue is a tunnel to the next area, green is intial point, yellow is item pickup, red is ray gun at the end.
 
 Area 1 guide: start at the start point and go left, come to the pickup which is boots with double jump, go right to a ledge that you can double jump up, climb the tower and take the tunnel on the right to area 2.
+Area 1 Secret: The area that seems blocked is actually a trick, and is instead a secret shortcut to area 3, allowing you to skip the hookshot.
