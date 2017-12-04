@@ -1,0 +1,1 @@
+This is the html5 build of the game.
