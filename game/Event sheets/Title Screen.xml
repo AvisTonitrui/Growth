@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Title Screen</name>
+    <events>
+        <comment>When button is left-clicked or enter is pressed, button goes down.</comment>
+        <event-block sid="309199362108992">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="891111201795403" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">StartButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="699664647350733" type="StartButton">
+                    <param id="0" name="Animation">&quot;Clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="817122355444082">
+            <conditions>
+                <condition id="2" name="Key is down" sid="497883940770700" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="831540332722960" type="StartButton">
+                    <param id="0" name="Animation">&quot;Clicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>When released, if cursor is over start button, or if enter is released, moves to the first area of the game itself.</comment>
+        <event-block sid="968329131242899">
+            <conditions>
+                <condition id="3" name="On button released" sid="117763014883238" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="253736285884323" type="StartButton">
+                    <param id="0" name="Animation">&quot;Unclicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="712381071141335">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="559814624199230" type="Mouse">
+                            <param id="0" name="Object">StartButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="390713385217808" type="System">
+                            <param id="0" name="Layout">Area 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="957548708525235">
+            <conditions>
+                <condition id="3" name="On key released" sid="132374346078509" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="831230892090195" type="StartButton">
+                    <param id="0" name="Animation">&quot;Unclicked&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="941555799791341" type="System">
+                    <param id="0" name="Layout">Area 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="896213588290128">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="268812026251722" type="System" />
+            </conditions>
+            <actions>
+                <action id="24" name="Play at position" sid="701495472790827" type="TitleScreenMusic">
+                    <param id="0" name="Audio file">Lucid_Title_Screen</param>
+                    <param id="1" name="Loop">1</param>
+                    <param id="2" name="Volume">-10</param>
+                    <param id="3" name="X">400</param>
+                    <param id="4" name="Y">300</param>
+                    <param id="5" name="Angle">0</param>
+                    <param id="6" name="Inner angle">360</param>
+                    <param id="7" name="Outer angle">360</param>
+                    <param id="8" name="Outer gain">0</param>
+                    <param id="9" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="428695005359411">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="367740820337038" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="607200354468701" type="TitleScreenMusic">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="369645404930759" type="System">
+                    <param id="0" name="Variable">MusicOn</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="249476987921432" type="System">
+                    <param id="0" name="Variable">TunnelDirection</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

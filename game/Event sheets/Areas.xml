@@ -1,0 +1,965 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Areas</name>
+    <events>
+        <variable constant="0" name="MusicOn" sid="962865895913908" static="0" type="number">0</variable>
+        <variable constant="0" name="SpeedAuto" sid="719697792412817" static="0" type="number">0</variable>
+        <variable constant="0" name="ClawAuto" sid="568237889439534" static="0" type="number">0</variable>
+        <variable constant="0" name="JumpAuto" sid="127845183732510" static="0" type="number">0</variable>
+        <variable constant="0" name="Speed" sid="862878573940256" static="0" type="number">0</variable>
+        <variable constant="0" name="ClawShot" sid="243766059723702" static="0" type="number">0</variable>
+        <variable constant="0" name="TunnelDirection" sid="489260977594351" static="0" type="number">0</variable>
+        <variable comment="Number of 0 or 1 that enables double jump when boots are picked up." constant="0" name="DoubleJump" sid="429469269708581" static="0" type="number">0</variable>
+        <event-group description="controls for animation while in areas" sid="881530566732613" title="Animation Controls">
+            <sub-events>
+                <event-block sid="529320231047278">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="720927287646146" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="326717260652369" type="Istrid">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="533421278896718">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="242303765469849" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="138724700442473" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="758477114421738" type="Istrid">
+                                    <param id="0" name="Animation">&quot;RunBooted&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="625996450637265">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="795767374842948" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="702195735570975" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="955284004798088" type="Istrid">
+                                    <param id="0" name="Animation">&quot;RunBootless&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="851410480610285">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="804317056066897" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="877014985785739" type="Istrid">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="142129368311766">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="248345612616712" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="485995520182481" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="943220519703268" type="Istrid">
+                                    <param id="0" name="Animation">&quot;IdleBooted&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="605256774284117">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="408678983198825" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="957735965271981" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="724463477687940" type="Istrid">
+                                    <param id="0" name="Animation">&quot;IdleBootless&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="616794342606827">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="141726062934033" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="884586329854427" type="Istrid">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="283148091549855">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="147362757439946" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="626208047177122" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="745412929094334" type="Istrid">
+                                    <param id="0" name="Animation">&quot;RunBooted&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="139218955422519">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="102969667228421" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="883660109757423" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="882182643843568" type="Istrid">
+                                    <param id="0" name="Animation">&quot;RunBootless&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="952264957300154">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="103711744217094" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="921241796271919" type="Istrid">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="680960220111451">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="804391605348442" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="231873431801695" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="697752230208734" type="Istrid">
+                                    <param id="0" name="Animation">&quot;IdleBooted&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="829251867943873">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="599890059051156" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="862224312538975" type="Istrid">
+                                    <param id="0" name="Instance variable">Jumping</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="600447952733090" type="Istrid">
+                                    <param id="0" name="Animation">&quot;IdleBootless&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="491204157536084">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="497335859082833" type="Istrid" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="106256310315664" type="Istrid">
+                            <param id="0" name="Instance variable">Jumping</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="411182124088312">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="324785819078147" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="910067583914913" type="Istrid">
+                                    <param id="0" name="Animation">&quot;JumpBooted&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="736848511638185" type="Istrid">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="735880088540609">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="876208829975208" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="553667191341961" type="Istrid">
+                                    <param id="0" name="Animation">&quot;JumpBootless&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="107531072804108">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="975431410133007" type="Istrid" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="511491307759487" type="Istrid">
+                            <param id="0" name="Instance variable">Jumping</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="482382105569464">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="718821386530694" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="138694136895436" type="Istrid">
+                                    <param id="0" name="Animation">&quot;IdleBooted&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="444479541062677">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="249005740771318" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="284685457132190" type="Istrid">
+                                    <param id="0" name="Animation">&quot;IdleBootless&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="controlls for the boots in the areas" sid="425732746562757" title="Boots Controls">
+            <sub-events>
+                <event-block sid="361484900430954">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="734553329348276" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="567489760123724" type="Boots">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="536049061267684">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="252401569613900" type="System">
+                            <param id="0" name="Variable">DoubleJump</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="13" name="Set double-jump" sid="430623753429050" type="Istrid">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708163012529708">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="129353674623021" type="Istrid">
+                            <param id="0" name="Object">Boots</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="620762178511977" type="Boots" />
+                        <action id="-9" name="Set value" sid="171242323483523" type="System">
+                            <param id="0" name="Variable">DoubleJump</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="824900066049705" type="System">
+                            <param id="0" name="Variable">JumpAuto</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-36" name="Save" sid="601573081184564" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="573973295566411" type="System">
+                            <param id="0" name="Layout">Inventory</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Controls for the claw while in the areas" sid="624068010843421" title="Claw Controls">
+            <sub-events>
+                <event-block sid="406128802118339">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="544373387913566" type="Istrid">
+                            <param id="0" name="Object">ClawShot</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="360270844330665" type="ClawShot" />
+                        <action id="-9" name="Set value" sid="170775422530974" type="System">
+                            <param id="0" name="Variable">ClawShot</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="122639126868471" type="System">
+                            <param id="0" name="Variable">ClawAuto</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-36" name="Save" sid="691199658670985" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="963395628407576" type="System">
+                            <param id="0" name="Layout">Inventory</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="258108779020418">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="887770038306158" type="Claw" />
+                        <condition id="7" name="Is mirrored" sid="702020069569003" type="Istrid" />
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="760642585152969" type="Claw">
+                            <param id="0" name="Degrees">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="454612072309585">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="994611939098520" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="945752140101605" type="System">
+                            <param id="0" name="Variable">ClawShot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="184619181403130" type="Istrid">
+                            <param id="0" name="Instance variable">Shooting</param>
+                        </condition>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="201279978835058" type="Istrid" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="110578744968720" type="Istrid">
+                            <param id="0" name="Object">Claw</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="133739682449616" type="Istrid">
+                            <param id="0" name="Instance variable">Shooting</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="622137115747995" type="Istrid">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="896826371488311" type="Claw">
+                            <param id="0" name="Instance variable">IsMoving</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>spawning chains behind the claw</comment>
+                <event-block sid="485334563693593">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="315487415444862" type="System">
+                            <param id="0" name="Interval (seconds)">0.0333</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="949993220547026" type="Claw">
+                            <param id="0" name="Instance variable">IsMoving</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="930558489753973" type="Claw">
+                            <param id="0" name="Object">Chain</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action behavior="Bullet" id="6" name="Set distance travelled" sid="581873954407455" type="Claw">
+                            <param id="0" name="Distance">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>destroying chains when Istrid collides with them</comment>
+                <event-block sid="936105518800901">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="256185861408471" type="Istrid">
+                            <param id="0" name="Object">Chain</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="105584372424040" type="Chain" />
+                    </actions>
+                </event-block>
+                <event-block sid="263949462939592">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="369635461648055" type="Claw">
+                            <param id="0" name="Object">FloorsWalls</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="258017693139802" type="Claw">
+                            <param id="0" name="Speed">5</param>
+                        </action>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="665144516849950" type="Istrid">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="451313246982246" type="Claw">
+                            <param id="0" name="Instance variable">IsMoving</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="296482745000457">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="165323136056445" type="Claw">
+                            <param id="0" name="Object">FloorsWalls</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="664615950780960" type="Claw">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="566069254448444">
+                            <conditions>
+                                <condition id="-13" name="Is between angles" sid="198467438963468" type="Claw">
+                                    <param id="0" name="First angle">0</param>
+                                    <param id="1" name="Second angle">45</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="895234371963609" type="Istrid">
+                                    <param id="0" name="Vector X">1200</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="822019125390307">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="568818051998911" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="8" name="Set vector X" sid="316624029722924" type="Istrid">
+                                    <param id="0" name="Vector X">-1200</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="258955451391380">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="317756886968960" type="Claw">
+                            <param id="0" name="Object">Istrid</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="626331655431797" type="Claw">
+                            <param id="0" name="Object">FloorsWalls</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="766476332530308" type="Claw" />
+                    </actions>
+                </event-block>
+                <event-block sid="243214783837559">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="662867193677976" type="Claw" />
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="191373991778412" type="Istrid">
+                            <param id="0" name="Instance variable">Shooting</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="624445787182860" type="Istrid">
+                            <param id="0" name="Gravity">1500</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="886878152804378" type="Istrid">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="558840055939541" type="Istrid">
+                            <param id="0" name="Vector X">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <comment>destryoing all chains when the hook is destroyed</comment>
+                        <event-block sid="102134835859099">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="673691176417760" type="System">
+                                    <param id="0" name="Object">Chain</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="416545881634999" type="Chain" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Controllers for Speed booster.  Pressing the down arrow gives you a speed boost</comment>
+        <event-group description="controls for the speed boosyer while in the areas" sid="169587130381384" title="Speed Booster Controls">
+            <sub-events>
+                <event-block sid="468002471590434">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="900169131378958" type="Istrid">
+                            <param id="0" name="Object">SpeedChip</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="865524481965276" type="SpeedChip" />
+                        <action id="-9" name="Set value" sid="862911140206895" type="System">
+                            <param id="0" name="Variable">Speed</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="822766130518260" type="System">
+                            <param id="0" name="Variable">SpeedAuto</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-36" name="Save" sid="649979162941515" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="274093046198702" type="System">
+                            <param id="0" name="Layout">Inventory</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="274493401529019">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="366665957635892" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="436067742807260" type="System">
+                            <param id="0" name="Variable">Speed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="185800512527193" type="Istrid">
+                            <param id="0" name="Instance variable">Speed</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">660</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="788179312481909" type="Istrid">
+                            <param id="0" name="Max Speed">Self.Platform.MaxSpeed + 2</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="360470835413320" type="Istrid">
+                            <param id="0" name="Instance variable">Speed</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="457004931926585">
+                    <conditions>
+                        <condition behavior="Platform" id="9" name="On landed" sid="398639704582962" type="Istrid" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="183743935674786" type="Istrid">
+                            <param id="0" name="Max Speed">330</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="284150205384224" type="Istrid">
+                            <param id="0" name="Instance variable">Speed</param>
+                            <param id="1" name="Value">330</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Controls for changing layouts to the different areas, leaving the layouts is first.</comment>
+        <event-group description="Controls for changing of layouts" sid="883399965944713" title="Layout Controls">
+            <sub-events>
+                <event-block sid="133194860398114">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="283082629018691" type="Istrid">
+                            <param id="0" name="Object">LeftExit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="443360155244633" type="System">
+                            <param id="0" name="Variable">TunnelDirection</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="422632217734783">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="610979994087119" type="LeftExit">
+                                    <param id="0" name="Instance variable">Arrival</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="417637848266214" type="System">
+                                    <param id="0" name="Layout">Area 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="144275142250698">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="913304347161499" type="LeftExit">
+                                    <param id="0" name="Instance variable">Arrival</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="585598718444213" type="System">
+                                    <param id="0" name="Layout">Area 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="734433062825080">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="964405812693578" type="LeftExit">
+                                    <param id="0" name="Instance variable">Arrival</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="720706310729255" type="System">
+                                    <param id="0" name="Layout">Area 3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="755674464107753">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="793968219302567" type="Istrid">
+                            <param id="0" name="Object">RightExit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="805218442842561" type="System">
+                            <param id="0" name="Variable">TunnelDirection</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="994696654675673">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="703017102486006" type="RightExit">
+                                    <param id="0" name="Instance variable">Arrival</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="261729029593533" type="System">
+                                    <param id="0" name="Layout">Area 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="824593565034955">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="313643254697542" type="RightExit">
+                                    <param id="0" name="Instance variable">Arrival</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="507249045623906" type="System">
+                                    <param id="0" name="Layout">Area 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="247562071387861">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="632881708999348" type="RightExit">
+                                    <param id="0" name="Instance variable">Arrival</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="487958486430598" type="System">
+                                    <param id="0" name="Layout">Area 3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="336425988971309">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="270988833298841" type="Istrid">
+                            <param id="0" name="Object">LeftWierdExit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="812467784321591" type="System">
+                            <param id="0" name="Variable">TunnelDirection</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="817680328415887" type="System">
+                            <param id="0" name="Layout">Area 2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="982615669342867">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="463223095199509" type="Istrid">
+                            <param id="0" name="Object">RightWierdExit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="214087733499347" type="System">
+                            <param id="0" name="Variable">TunnelDirection</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="946711474060482" type="System">
+                            <param id="0" name="Layout">Area 3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="233505510053597">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="596378308645624" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment>future stuff to clean for a new game automatically</comment>
+                        <event-block sid="318319754660306">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="530383464330360" type="System">
+                                    <param id="0" name="Variable">TunnelDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="226410030938139" type="System">
+                                    <param id="0" name="Variable">ClawShot</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="977390769685105" type="System">
+                                    <param id="0" name="Variable">Speed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="333193008600970" type="System">
+                                    <param id="0" name="Variable">DoubleJump</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="702538078818323" type="Istrid">
+                                    <param id="0" name="X">704</param>
+                                    <param id="1" name="Y">5056</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="715318451980401">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="911930095323073" type="System">
+                                    <param id="0" name="Variable">TunnelDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="942749331765520" type="Istrid">
+                                    <param id="0" name="Object">LeftExit</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="140682471712212" type="Istrid">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="568866696754617">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="353101822486183" type="System">
+                                    <param id="0" name="Variable">TunnelDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="446563930542635" type="Istrid">
+                                    <param id="0" name="Object">RightExit</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="381725157220884" type="Istrid">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Extra directions to deal with traveling glitch</comment>
+                        <event-block sid="897732696054226">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="387324250977359" type="System">
+                                    <param id="0" name="Variable">TunnelDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="239664004897762" type="Istrid">
+                                    <param id="0" name="Object">RightWierdExit</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="941763261313376" type="Istrid">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="246158583309996">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="703385410794934" type="System">
+                                    <param id="0" name="Variable">TunnelDirection</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set position to another object" sid="151736155481536" type="Istrid">
+                                    <param id="0" name="Object">LeftWierdExit</param>
+                                    <param id="1" name="Image point (optional)">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="756935755981715" type="Istrid">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="722471856971787">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="866421290285543" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-36" name="Save" sid="612204198523204" type="System">
+                            <param id="0" name="Slot">&quot;mysave&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="706088026022387" type="System">
+                            <param id="0" name="Layout">Inventory</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Endgame controllers</comment>
+        <event-block sid="798345964997755">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="629544872319995" type="Istrid">
+                    <param id="0" name="Object">RayGun</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="274046897682661" type="BlackScreen" />
+                <action behavior="Fade" id="1" name="Start fade" sid="352634397109957" type="TBC" />
+                <action id="-15" name="Set visible" sid="803871719142426" type="BlackScreen">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="465227393902856" type="TBC">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="744970365169094" type="Istrid">
+                    <param id="0" name="Input">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="744404568032134">
+            <conditions>
+                <condition behavior="Fade" id="2" name="On wait finished" sid="656838401417781" type="BlackScreen" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="196354796580255" type="TitleScreenMusic">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="465858182724494" type="System">
+                    <param id="0" name="Layout">Title Screen</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Music</comment>
+        <event-block sid="453417993598400">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="243965797496455" type="System" />
+                <condition id="-14" name="Compare variable" sid="500990767095513" type="System">
+                    <param id="0" name="Variable">MusicOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="651034717656292" type="TitleScreenMusic">
+                    <param id="0" name="Audio file">Lucid_Ambient</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="699158635691965" type="System">
+                    <param id="0" name="Variable">MusicOn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Misc. stuff</comment>
+        <event-block sid="795611676708929">
+            <conditions>
+                <condition id="-29" name="On load complete" sid="836469578457835" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="270428059951887" type="System">
+                    <param id="0" name="Variable">ClawAuto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="919790828958109" type="System">
+                    <param id="0" name="Variable">JumpAuto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="595529305004789" type="System">
+                    <param id="0" name="Variable">SpeedAuto</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
