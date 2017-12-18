@@ -777,7 +777,7 @@
                                 </action>
                                 <action id="-3" name="Set position" sid="702538078818323" type="Istrid">
                                     <param id="0" name="X">704</param>
-                                    <param id="1" name="Y">5056</param>
+                                    <param id="1" name="Y">5050</param>
                                 </action>
                             </actions>
                         </event-block>
