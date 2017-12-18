@@ -21,7 +21,6 @@
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
-        <behavior author="Scirra" id="NoSave" version="1">No Save</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -55,333 +54,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-folder name="Floors/Walls">
-            <object-type name="Sprite" sid="266969799413033">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="368128966527828">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980310553172464" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite4" sid="106972306339056">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="645440617149813">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224644489111149" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite5" sid="570798415361920">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="488585982306727">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="988212622953175" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite6" sid="449074451229845">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="671768422814092">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="882686078601447" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite3" sid="234851298105310">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="677207435550720">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579460305146899" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite7" sid="641079377377136">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="358336347596436">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984258763287482" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite8" sid="638757842257929">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="396207985323690">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="413839690752072" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite9" sid="307798733934162">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="465340310338289">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956147442464218" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite12" sid="678170025840253">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="421616795194177">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733921271769680" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite10" sid="510659270330320">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="721432982167441">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799784379396764" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite11" sid="711641709518696">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="908514591673601">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573855613059894" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite13" sid="142639392840141">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="569295586647311">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463616952008943" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="BigBrother" sid="362680625419125">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="294934027590728">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371400277790978" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite15" sid="502184567421229">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="718093831050501">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870968673033958" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite16" sid="377021334800261">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="867879427213302">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136080226770718" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite17" sid="662528654400561">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="973719490281768">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155967070154738" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite19" sid="908573395857685">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="587877444672809">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507906293514054" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite21" sid="703586427813282">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="197428385246048">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264785000217691" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite22" sid="998485820911893">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="537061724921970">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966418663806638" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite23" sid="973713543569498">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="179201727595941">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="105648332953871" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite24" sid="482422610837342">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="151253741173365">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301449858121516" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite25" sid="221133219994265">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="926643974705015">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488569583617364" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite26" sid="968835531013222">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="250704889075783">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694494763310625" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite28" sid="336517345663794">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="621695069578209">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="946120013974066" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Sprite29" sid="203261582572726">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="561703964974334">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318945818529897" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitHub Repos\Lucid\assets\placeholders\Grey Block.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-        </object-folder>
         <object-type name="Istrid" sid="602012725070960">
             <plugin id="Sprite" />
             <instance-variables>
@@ -777,56 +449,36 @@
         </object-type>
         <object-type name="Tilemap2" sid="900752570367180">
             <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="277131973671575">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
         <object-type name="Tilemap3" sid="760793929816789">
             <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="179280519024888">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
         <object-type name="Tilemap4" sid="914566282236485">
             <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="202703938224306">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
     </object-folder>
-    <families>
-        <family name="FloorsWalls" plugin-id="Sprite" sid="545792738785795">
-            <members>
-                <member>BigBrother</member>
-                <member>Sprite</member>
-                <member>Sprite10</member>
-                <member>Sprite11</member>
-                <member>Sprite12</member>
-                <member>Sprite13</member>
-                <member>Sprite15</member>
-                <member>Sprite16</member>
-                <member>Sprite17</member>
-                <member>Sprite19</member>
-                <member>Sprite21</member>
-                <member>Sprite22</member>
-                <member>Sprite23</member>
-                <member>Sprite24</member>
-                <member>Sprite25</member>
-                <member>Sprite26</member>
-                <member>Sprite28</member>
-                <member>Sprite29</member>
-                <member>Sprite3</member>
-                <member>Sprite4</member>
-                <member>Sprite5</member>
-                <member>Sprite6</member>
-                <member>Sprite7</member>
-                <member>Sprite8</member>
-                <member>Sprite9</member>
-            </members>
-            <behaviors>
-                <behavior-type name="NoSave" sid="467649960958927">
-                    <behavior id="NoSave" />
-                </behavior-type>
-            </behaviors>
-        </family>
-    </families>
+    <families />
     <layout-folder>
         <layout>Title Screen.xml</layout>
         <layout>Area 1.xml</layout>

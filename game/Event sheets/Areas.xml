@@ -437,11 +437,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="263949462939592">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="369635461648055" type="Claw">
-                            <param id="0" name="Object">FloorsWalls</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action behavior="Bullet" id="0" name="Set speed" sid="258017693139802" type="Claw">
                             <param id="0" name="Speed">5</param>
@@ -456,11 +452,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="296482745000457">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="165323136056445" type="Claw">
-                            <param id="0" name="Object">FloorsWalls</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action behavior="Bullet" id="0" name="Set speed" sid="664615950780960" type="Claw">
                             <param id="0" name="Speed">0</param>
@@ -496,9 +488,6 @@
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="317756886968960" type="Claw">
                             <param id="0" name="Object">Istrid</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="626331655431797" type="Claw">
-                            <param id="0" name="Object">FloorsWalls</param>
                         </condition>
                     </conditions>
                     <actions>
