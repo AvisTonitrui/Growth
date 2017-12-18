@@ -785,6 +785,11 @@
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
+        <object-type name="Tilemap4" sid="914566282236485">
+            <plugin id="Tilemap" />
+            <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families>
         <family name="FloorsWalls" plugin-id="Sprite" sid="545792738785795">
