@@ -444,6 +444,11 @@
         </object-type>
         <object-type name="Tilemap" sid="482105708968814">
             <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="359980180111565">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>

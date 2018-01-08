@@ -436,8 +436,21 @@
                         <action id="-9" name="Destroy" sid="105584372424040" type="Chain" />
                     </actions>
                 </event-block>
-                <event-block sid="263949462939592">
-                    <conditions />
+                <event-block any="1" sid="263949462939592">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="376123773211747" type="Claw">
+                            <param id="0" name="Object">Tilemap</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="952022680775171" type="Claw">
+                            <param id="0" name="Object">Tilemap2</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="305488381765299" type="Claw">
+                            <param id="0" name="Object">Tilemap3</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="614348664126521" type="Claw">
+                            <param id="0" name="Object">Tilemap4</param>
+                        </condition>
+                    </conditions>
                     <actions>
                         <action behavior="Bullet" id="0" name="Set speed" sid="258017693139802" type="Claw">
                             <param id="0" name="Speed">5</param>
@@ -451,8 +464,21 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="296482745000457">
-                    <conditions />
+                <event-block any="1" sid="296482745000457">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="986410472547168" type="Claw">
+                            <param id="0" name="Object">Tilemap</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="794568033561573" type="Claw">
+                            <param id="0" name="Object">Tilemap2</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="324688380205958" type="Claw">
+                            <param id="0" name="Object">Tilemap3</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="809156348809099" type="Claw">
+                            <param id="0" name="Object">Tilemap4</param>
+                        </condition>
+                    </conditions>
                     <actions>
                         <action behavior="Bullet" id="0" name="Set speed" sid="664615950780960" type="Claw">
                             <param id="0" name="Speed">0</param>
@@ -777,7 +803,7 @@
                                 </action>
                                 <action id="-3" name="Set position" sid="702538078818323" type="Istrid">
                                     <param id="0" name="X">704</param>
-                                    <param id="1" name="Y">5050</param>
+                                    <param id="1" name="Y">5000</param>
                                 </action>
                             </actions>
                         </event-block>
