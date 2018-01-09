@@ -482,6 +482,11 @@
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
+        <object-type name="Tilemap5" sid="191075339360699">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\GitHub Repos\Lucid\assets\Floor Tiles.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
