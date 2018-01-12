@@ -945,9 +945,9 @@
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="651034717656292" type="TitleScreenMusic">
-                    <param id="0" name="Audio file">Lucid_Ambient</param>
+                    <param id="0" name="Audio file">Lucid_levels</param>
                     <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">-10</param>
+                    <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="699158635691965" type="System">

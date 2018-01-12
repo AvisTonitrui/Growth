@@ -525,6 +525,8 @@
         <file name="Lucid_Title_Screen.ogg" />
         <file name="Lucid_Ambient.m4a" />
         <file name="Lucid_Ambient.ogg" />
+        <file name="Lucid_levels.m4a" />
+        <file name="Lucid_levels.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
