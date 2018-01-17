@@ -584,9 +584,7 @@
                 </event-block>
                 <event-block sid="274493401529019">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="366665957635892" type="Keyboard">
-                            <param id="0" name="Key">40 (Down arrow)</param>
-                        </condition>
+                        <condition id="-1" name="Every tick" sid="366665957635892" type="System" />
                         <condition id="-14" name="Compare variable" sid="436067742807260" type="System">
                             <param id="0" name="Variable">Speed</param>
                             <param id="1" name="Comparison">0</param>
@@ -777,14 +775,7 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="596378308645624" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="201658760277923" type="Audio">
-                            <param id="0" name="Audio file">Lucid Theme</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <comment>future stuff to clean for a new game automatically</comment>
                         <event-block sid="318319754660306">
@@ -954,6 +945,12 @@
                 <action id="-9" name="Set value" sid="699158635691965" type="System">
                     <param id="0" name="Variable">MusicOn</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="201658760277923" type="Audio">
+                    <param id="0" name="Audio file">Lucid Theme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
