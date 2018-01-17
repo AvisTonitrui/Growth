@@ -439,16 +439,13 @@
                 <event-block any="1" sid="263949462939592">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="376123773211747" type="Claw">
-                            <param id="0" name="Object">Tilemap</param>
+                            <param id="0" name="Object">Area1</param>
                         </condition>
                         <condition id="0" name="On collision with another object" sid="952022680775171" type="Claw">
-                            <param id="0" name="Object">Tilemap2</param>
+                            <param id="0" name="Object">Area2</param>
                         </condition>
                         <condition id="0" name="On collision with another object" sid="305488381765299" type="Claw">
-                            <param id="0" name="Object">Tilemap3</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="614348664126521" type="Claw">
-                            <param id="0" name="Object">Tilemap4</param>
+                            <param id="0" name="Object">Area3</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -467,16 +464,13 @@
                 <event-block any="1" sid="296482745000457">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="986410472547168" type="Claw">
-                            <param id="0" name="Object">Tilemap</param>
+                            <param id="0" name="Object">Area1</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="794568033561573" type="Claw">
-                            <param id="0" name="Object">Tilemap2</param>
+                            <param id="0" name="Object">Area2</param>
                         </condition>
                         <condition id="1" name="Is overlapping another object" sid="324688380205958" type="Claw">
-                            <param id="0" name="Object">Tilemap3</param>
-                        </condition>
-                        <condition id="1" name="Is overlapping another object" sid="809156348809099" type="Claw">
-                            <param id="0" name="Object">Tilemap4</param>
+                            <param id="0" name="Object">Area3</param>
                         </condition>
                     </conditions>
                     <actions>

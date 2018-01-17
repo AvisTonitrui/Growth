@@ -206,7 +206,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tilemap2" uid="213">
+                <instance type="Area2" uid="213">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <tile-width>32</tile-width>

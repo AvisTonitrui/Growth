@@ -18,7 +18,6 @@
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
-        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -341,7 +340,7 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="Sprite2" sid="102556760318321">
+        <object-type name="Inventory" sid="102556760318321">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331664704108506" speed="2">
@@ -359,20 +358,7 @@
         <object-type name="SpeedHelp" sid="374348167987350">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite18" sid="774473447066545">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Anchor" sid="693082876349100">
-                    <behavior id="Anchor" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975070265073855" speed="5">
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Text" sid="532157180767093">
+        <object-type name="inventoryhelp" sid="532157180767093">
             <plugin id="Text" />
         </object-type>
         <object-type name="RightWierdExit" sid="262122544944162">
@@ -395,9 +381,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text2" sid="746539038358623">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="SpeedIcon" sid="705287256595719">
             <plugin id="Sprite" />
             <animation-folder>
@@ -411,7 +394,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite20" sid="996030410943517">
+        <object-type name="TitleScreen" sid="996030410943517">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="24" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722299885166721" speed="10">
@@ -442,7 +425,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Tilemap" sid="482105708968814">
+        <object-type name="Area1" sid="482105708968814">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Solid" sid="359980180111565">
@@ -452,7 +435,7 @@
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
-        <object-type name="Tilemap2" sid="900752570367180">
+        <object-type name="Area2" sid="900752570367180">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Solid" sid="277131973671575">
@@ -462,7 +445,7 @@
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
-        <object-type name="Tilemap3" sid="760793929816789">
+        <object-type name="Area3" sid="760793929816789">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Solid" sid="179280519024888">
@@ -472,17 +455,7 @@
             <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
             <tiles />
         </object-type>
-        <object-type name="Tilemap4" sid="914566282236485">
-            <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="202703938224306">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="H:\construct 2 projects\Lucid\assets\Floor Tiles.png" />
-            <tiles />
-        </object-type>
-        <object-type name="Tilemap5" sid="191075339360699">
+        <object-type name="Secret" sid="191075339360699">
             <plugin id="Tilemap" />
             <texture original-source="D:\GitHub Repos\Lucid\assets\Floor Tiles.png" />
             <tiles />

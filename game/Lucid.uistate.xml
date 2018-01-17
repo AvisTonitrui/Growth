@@ -11,13 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Title Screen</layout>
-        <layout order="2">Area 1</layout>
+        <layout active="1" order="2">Area 1</layout>
         <layout order="3">Area 2</layout>
         <layout order="4">Area 3</layout>
         <layout order="6">Inventory</layout>
         <event-sheet order="1">Title Screen</event-sheet>
         <event-sheet order="5">Areas</event-sheet>
-        <event-sheet active="1" order="7">Inventory</event-sheet>
+        <event-sheet order="7">Inventory</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -48,12 +48,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SpeedChip/" />
         <folder expanded="1" path="animation-folder/RayGun/" />
         <folder expanded="1" path="animation-folder/BlackScreen/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite18/" />
+        <folder expanded="1" path="animation-folder/Inventory/" />
         <folder expanded="1" path="animation-folder/RightWierdExit/" />
         <folder expanded="1" path="animation-folder/LeftWierdExit/" />
         <folder expanded="1" path="animation-folder/SpeedIcon/" />
-        <folder expanded="1" path="animation-folder/Sprite20/" />
+        <folder expanded="1" path="animation-folder/TitleScreen/" />
         <folder expanded="1" path="animation-folder/Exit/" />
     </folders-expanded>
 </c2uistate>
