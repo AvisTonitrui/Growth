@@ -81,7 +81,7 @@
                 <condition id="-2" name="On start of layout" sid="268812026251722" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="535734553130708" type="TitleScreenMusic">
+                <action id="0" name="Play" sid="535734553130708" type="Audio">
                     <param id="0" name="Audio file">Lucid Title Theme</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
@@ -94,7 +94,7 @@
                 <condition id="-3" name="On end of layout" sid="367740820337038" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="607200354468701" type="TitleScreenMusic">
+                <action id="6" name="Stop" sid="607200354468701" type="Audio">
                     <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
                 <action id="-9" name="Set value" sid="369645404930759" type="System">

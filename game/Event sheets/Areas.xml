@@ -777,7 +777,14 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="596378308645624" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="201658760277923" type="Audio">
+                            <param id="0" name="Audio file">Lucid Theme</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <comment>future stuff to clean for a new game automatically</comment>
                         <event-block sid="318319754660306">
@@ -925,7 +932,7 @@
                 <condition behavior="Fade" id="2" name="On wait finished" sid="656838401417781" type="BlackScreen" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="196354796580255" type="TitleScreenMusic">
+                <action id="6" name="Stop" sid="196354796580255" type="Audio">
                     <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="465858182724494" type="System">
@@ -944,12 +951,6 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="651034717656292" type="TitleScreenMusic">
-                    <param id="0" name="Audio file">Lucid_levels</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="-9" name="Set value" sid="699158635691965" type="System">
                     <param id="0" name="Variable">MusicOn</param>
                     <param id="1" name="Value">1</param>

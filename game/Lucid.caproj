@@ -150,7 +150,7 @@
                 </animation-folder>
             </animation-folder>
         </object-type>
-        <object-type name="TitleScreenMusic" sid="784285120030883">
+        <object-type name="Audio" sid="784285120030883">
             <plugin id="Audio" />
         </object-type>
         <object-type name="StartButton" sid="714020106519842">
@@ -502,7 +502,7 @@
         <event-sheet>Inventory.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="TitleScreenMusic" uid="2">
+        <global-instance type="Audio" uid="2">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>None</saveload>
@@ -521,10 +521,10 @@
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="Lucid_levels.m4a" />
-        <file name="Lucid_levels.ogg" />
         <file name="Lucid Title Theme.m4a" />
         <file name="Lucid Title Theme.ogg" />
+        <file name="Lucid Theme.m4a" />
+        <file name="Lucid Theme.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
