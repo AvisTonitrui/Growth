@@ -81,17 +81,11 @@
                 <condition id="-2" name="On start of layout" sid="268812026251722" type="System" />
             </conditions>
             <actions>
-                <action id="24" name="Play at position" sid="701495472790827" type="TitleScreenMusic">
-                    <param id="0" name="Audio file">Lucid_Title_Screen</param>
-                    <param id="1" name="Loop">1</param>
-                    <param id="2" name="Volume">-10</param>
-                    <param id="3" name="X">400</param>
-                    <param id="4" name="Y">300</param>
-                    <param id="5" name="Angle">0</param>
-                    <param id="6" name="Inner angle">360</param>
-                    <param id="7" name="Outer angle">360</param>
-                    <param id="8" name="Outer gain">0</param>
-                    <param id="9" name="Tag (optional)">&quot;&quot;</param>
+                <action id="0" name="Play" sid="535734553130708" type="TitleScreenMusic">
+                    <param id="0" name="Audio file">Lucid Title Theme</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>

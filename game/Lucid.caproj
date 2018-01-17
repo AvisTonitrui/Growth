@@ -521,12 +521,10 @@
     </global-instances>
     <sounds-folder />
     <music-folder>
-        <file name="Lucid_Title_Screen.m4a" />
-        <file name="Lucid_Title_Screen.ogg" />
-        <file name="Lucid_Ambient.m4a" />
-        <file name="Lucid_Ambient.ogg" />
         <file name="Lucid_levels.m4a" />
         <file name="Lucid_levels.ogg" />
+        <file name="Lucid Title Theme.m4a" />
+        <file name="Lucid Title Theme.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
