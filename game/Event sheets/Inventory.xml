@@ -87,10 +87,28 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="107460503808429">
+        <event-block any="1" sid="107460503808429">
             <conditions>
                 <condition id="0" name="On key pressed" sid="581066431219102" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="958664222083985" type="Exit">
+                    <param id="0" name="Animation">&quot;pressed&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="799024005684996">
+            <conditions>
+                <condition id="3" name="On key released" sid="370556849120213" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="507494937536873" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Exit</param>
                 </condition>
             </conditions>
             <actions>
