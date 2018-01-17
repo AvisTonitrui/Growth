@@ -584,7 +584,9 @@
                 </event-block>
                 <event-block sid="274493401529019">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="366665957635892" type="System" />
+                        <condition id="2" name="Key is down" sid="366665957635892" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
                         <condition id="-14" name="Compare variable" sid="436067742807260" type="System">
                             <param id="0" name="Variable">Speed</param>
                             <param id="1" name="Comparison">0</param>
