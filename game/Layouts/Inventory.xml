@@ -151,7 +151,7 @@
                 </instance>
                 <instance type="SpeedHelp" uid="177">
                     <properties>
-                        <text>Hold the down arrow to build up speed and cross larger gaps.</text>
+                        <text>Continuously move in one direction to build up speed and cross large gaps.</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
