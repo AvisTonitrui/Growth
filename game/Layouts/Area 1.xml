@@ -102,12 +102,12 @@
                 </instance>
                 <instance type="inventoryhelp" uid="178">
                     <properties>
-                        <text>Press &apos;Enter&apos; to access your inventory.</text>
+                        <text>Press &apos;Esc&apos; to exit inventory. Arrow keys to move.</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-29,400,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -118,7 +118,7 @@
                         <x>448</x>
                         <y>4864</y>
                         <z>0</z>
-                        <width>512</width>
+                        <width>373</width>
                         <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
