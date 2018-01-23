@@ -482,6 +482,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="helpInInventory" sid="816300373695547">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
