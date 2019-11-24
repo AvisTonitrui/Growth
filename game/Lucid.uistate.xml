@@ -11,9 +11,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Title Screen</layout>
-        <layout active="1" order="1">Area 1</layout>
+        <layout order="1">Area 1</layout>
         <layout order="2">Inventory</layout>
         <event-sheet order="3">Inventory</event-sheet>
+        <event-sheet active="1" order="4">Areas</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

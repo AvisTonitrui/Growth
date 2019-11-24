@@ -210,12 +210,27 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="306818540053091">
+        <event-block sid="493856254833498">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="623039619023280" type="System" />
+                <condition id="-2" name="On start of layout" sid="583352031806097" type="System" />
+                <condition id="-14" name="Compare variable" sid="104348191888645" type="System">
+                    <param id="0" name="Variable">JumpAuto</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="874966399468234" type="System">
+                    <param id="0" name="Variable">ClawAuto</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="586193618707338" type="System">
+                    <param id="0" name="Variable">SpeedAuto</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="182597703338599" type="helpInInventory">
+                <action id="-15" name="Set visible" sid="230423801639966" type="helpInInventory">
                     <param id="0" name="Visibility">1</param>
                 </action>
             </actions>

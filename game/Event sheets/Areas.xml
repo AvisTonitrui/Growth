@@ -509,6 +509,10 @@
                         <condition id="1" name="Is overlapping another object" sid="317756886968960" type="Claw">
                             <param id="0" name="Object">Istrid</param>
                         </condition>
+                        <condition behavior="Platform" id="1" name="Compare speed" sid="979994867281851" type="Istrid">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="766476332530308" type="Claw" />
